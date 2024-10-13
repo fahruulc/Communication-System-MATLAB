@@ -7,7 +7,7 @@ m = Am / Ac;          % Indeks modulasi
 
 % Waktu sampling
 Fs = 1000;        % Frekuensi sampling (Sampling frequency) dalam Hz
-t = 0:1/Fs:0.05;   % Waktu dari 0 hingga 0.05 detik
+t = 0:1/Fs:1;   % Waktu dari 0 hingga 0.05 detik
 
 % Sinyal informasi (Message signal)
 m_t = Am * cos(2*pi*fm*t);
@@ -16,7 +16,7 @@ m_t = Am * cos(2*pi*fm*t);
 c_t = Ac * cos(2*pi*fc*t);
 
 % Sinyal AM dengan modulasi amplitudo
-s_t = (Ac + m * m_t) .* cos(2*pi*fc*t);
+s_t = (1 + m_t) .* cos(2*pi*fc*t);
 
 % Plot sinyal informasi, sinyal pembawa, dan sinyal AM
 figure;
