@@ -1,12 +1,12 @@
 % Parameter dasar
 Ac = 1;            % Amplitudo sinyal pembawa (Carrier amplitude)
-Am = 0.5;          % Amplitudo sinyal informasi (Message amplitude)
-fc = 1000;         % Frekuensi sinyal pembawa (Carrier frequency) dalam Hz
-fm = 50;           % Frekuensi sinyal informasi (Message frequency) dalam Hz
+Am = 3;          % Amplitudo sinyal informasi (Message amplitude)
+fc = 200;         % Frekuensi sinyal pembawa (Carrier frequency) dalam Hz
+fm = 10;           % Frekuensi sinyal informasi (Message frequency) dalam Hz
 m = Am / Ac;          % Indeks modulasi
 
 % Waktu sampling
-Fs = 10000;        % Frekuensi sampling (Sampling frequency) dalam Hz
+Fs = 1000;        % Frekuensi sampling (Sampling frequency) dalam Hz
 t = 0:1/Fs:0.05;   % Waktu dari 0 hingga 0.05 detik
 
 % Sinyal informasi (Message signal)
